@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지역 변수의 범위(Scope)</title>
+</head>
+<body>
+    <h2>지역변수의 유효 범위</h2>
+    <script>
+        function oneUp(){
+            var x = 1; // 지역변수 : 함수(블럭 범위 내)안에 있는것
+            x += 1;
+            return x;
+        }
+
+        var num = oneUp();
+        document.write("num = " + num + '<br');
+        // document.write(x) // 출력이 안됨 위에 함수에 할당하고 소멸
+    </script>
+</body>
+</html>

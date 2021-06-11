@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 - for문</title>
+</head>
+<body>
+    <h2>팩토리얼 계산</h2>
+    <script>
+    // 팩토리얼 구하기(1x2x3...x10)
+    var n = prompt("숫자를 입력하세요", "1");
+    var result = "";
+    var facto = 1;
+    var i;
+    
+    if(isNaN(num)){ // 숫자인경우 isNan()함수로 처리
+        document.write("입력이 취소되었습니다");
+    }else{
+        for(i=1; i<=n; i++){ // for(초기값;조건식;증감값)
+            facto = facto * i;
+        }
+        result = n + ' != ' + facto;
+        document.write(result);
+    }
+    </script>
+</body>
+</html>
