@@ -16,26 +16,8 @@
     <a href="#" onclick="prevGallery()"><img src="../images/left_btn.png" alt="왼쪽 버튼"></a>
     <a href="#"><img src="../images/img1.jpg" alt="새의 사진" id="gallery"></a>
     <a href="#" onclick="nextGallery()"><img src="../images/right_btn.png" alt="오른쪽 버튼"></a>
-    <script>
-        // 오른쪽 이미지 클릭하면 이미지 넘기기
-        var num = 1;
-        function nextGallery(){
-            num += 1;
-            if(num > 7){
-                num = 1;
-            }
-            
-            document.getElementById("gallery").src = "../images/img" + num + ".jpg";
-        }
-        // 왼쪽 이미지를 클릭하면 이미지 넘기기
-        function prevGallery(){
-            num -= 1;
-            if(num < 1){
-                num = 7;
-            }
-            document.getElementById("gallery").src = "../images/img" + num + ".jpg";
-        }
-    </script>
+    
+    <script src="../js/gallery.js"></script>
     </div>
 </body>
 </html>

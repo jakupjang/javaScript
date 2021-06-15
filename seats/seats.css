@@ -1,4 +1,14 @@
-#container{width: 600px; margin: 0 auto; text-align: center;}
-h1{color: blue;}
-table{border-collapse: collapse; }
-td{border: 1px solid #ccc; }
+#container{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+
+}
+td{
+    border: 1px solid #ccc;
+    padding: 10px;
+}
